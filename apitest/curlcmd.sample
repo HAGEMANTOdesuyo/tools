@@ -1,0 +1,4 @@
+#!/bin/sh
+curl \
+-X POST -d 'post1=post_sample1&post2=post_sample2' \
+'http://localhost:8080/curltest.php?get1=get_sample1&get2=get_sample2'

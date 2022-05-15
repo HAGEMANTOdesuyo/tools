@@ -1,0 +1,24 @@
+# APIのURL
+api='http://localhost:8080/curltest.php'
+
+# GET
+urlparam="\
+?get1=get_sample1\
+&get2=get_sample2\
+"
+
+# POST
+post="\
+post1=post_sample1\
+&post2=post_sample2\
+"
+
+# PUT
+#put="\
+#put1=put_sample1\
+#&put2=put_sample2\
+#"
+
+# ヘッダー
+#cookie='Cookie: remember_api_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6Ik1ha3RiQjVoXC83TFhmZjhjQUhoN29BPT0iLCJ2YWx1ZSI6IndLcE1xMHE4UGZOR1BMN2RTYytVT2xkaFZBM0xWdk5jdWpOZTFTbjJzcFwvV29Nd3ZzNmRLZFpjSXZRckltZk5FSkU4WnN6T241RVdXTHRxQnliTHRtdmtFbVU3R1VNTlI5ZWJXYzFqVUMyVjJoRGo3U2ltalRpS1ZRc2ZwVUFhUnlRXC92RG1FNmFvcjlPSUJqSGVpZ1VKd2o0ZkxLMjNURXdoMnh1NGxwQjlmQlhEMUJwUWRlUVRzMERJRTRZUXhcL1hFT2tXZnNIbEtHSFpnUlk4R0EycjV0ckxwc0RvVk1wMUV0OVwvXC9Oc3Bqdz0iLCJtYWMiOiJmMzI3MzU5NTM2YTBjZDdmYmQwOTBjNTZjYzViMGZlYTJkNTkyOTk0ODk3YzNjYWU5ZDI4ZDhjYWM0MjQyMjI1In0%3D; /schedule=%3Fmode%3Dh%26s_status%3D1%252C4%26s_branch%3D2%252C3%252C4%252C5%26h_branch%3D2%252C3%252C4%252C5%26sort%3Dexpected_order_date%2Basc%26add%3Dfalse%26uid%3D2%26h_customer%3D2%26page%3D1%26count%3D10'
+

@@ -1,13 +1,14 @@
 #!/bin/sh
-#
+
 # jq --version
 # jq-1.6
-#
+
 # 実行例
 # ./apitest.sh ./input_sample
 
 # ブラウザ
 browser='C:\ProgramData\Microsoft\Windows\Start Menu\Programs'
+
 # 引数チェック
 if [ $# != 1 ]; then
     echo 'syntax error!!'

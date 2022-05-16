@@ -7,7 +7,7 @@
 # ./apitest.sh ./input_sample
 
 # ブラウザ
-browser="C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
+browser='C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe'
 
 # 引数チェック
 if [ $# != 1 ]; then

@@ -1,13 +1,13 @@
-#!/bin/sh
-
+#!/bin/bash
+#
 # jq --version
 # jq-1.6
-
+#
 # 実行例
 # ./apitest.sh ./input_sample
 
 # ブラウザ
-browser='C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe'
+browser='/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'
 
 # 引数チェック
 if [ $# != 1 ]; then
@@ -18,9 +18,8 @@ fi
 
 # input読み込み
 . $1
-cmdfile=$(basename $1)
-cmdfile=${cmdfile//input/curlcmd}
-echo $cmdfile
+cmdfile=$(/usr/bin/basename $1)
+cmdfile=${cmdfile/input/curlcmd}
 url=${api}
 echo '#!/bin/sh' > ${cmdfile}
 echo curl \\ >>${cmdfile}
@@ -54,11 +53,11 @@ echo \'${url}\' >> ${cmdfile}
 
 # curl実行
 chmod +x ./${cmdfile}
-./${cmdfile}
-#./${cmdfile} | jq .
+#./${cmdfile}
+./${cmdfile} | jq .
 
 # エラーが発生した場合、リダイレクトしてその内容をブラウザで表示する
 if [ $? != 0 ]; then
     ./${cmdfile} > error.html
-    $browser error.html
+    #"$browser" ./error.html
 fi
